@@ -1,0 +1,32 @@
+CIBC
+
+from searchtweets import gen_rule_payload 
+query = 'to:Scotiabank -is:verified -@TD -@Scotiabank -@RBC -@BMO \
+-(futuremakers OR FUTUREMAKERS) -@scotiabankarena -(WiFi OR Wi-Fi OR wifi OR wi-fi) -CHL -pearson -runforthecure -CP0031 -HockeyCanada \
+lang:en -is:retweet -has:images -has:videos -has:hashtags has:profile_geo'
+
+
+ScotiaBank
+
+from searchtweets import gen_rule_payload 
+query = 'to:Scotiabank -is:verified -@TD -@CIBC -@RBC -@BMO -TD -RBC -BMO -CIBC \
+-(futuremakers OR FUTUREMAKERS) -@scotiabankarena -(WiFi OR Wi-Fi OR wifi OR wi-fi) -ScotiaBankCarnival -carribeancarnival -CarribeanCarnival -CP0031 -HockeyCanada \
+lang:en -is:retweet -has:images -has:videos -has:hashtags has:profile_geo'
+
+
+BMO
+query = 'to:BMO -is:verified -@TD -@Scotiabank -@RBC -@CIBC -TD -RBC -Scotia -CIBC \
+-(futuremakers OR FUTUREMAKERS) -(WiFi OR Wi-Fi OR wifi OR wi-fi) -pride -field -CP0031 -HockeyCanada -CHL -lennox -ari \
+lang:en -is:retweet -has:images -has:videos -has:hashtags has:profile_geo'
+
+TD
+
+query = 'to:TD_Canada -is:verified -@BMO -@Scotiabank -@RBC -@CIBC -@TDAmeritrade -@TDBank_US -CIBC -RBC -Scotia -BMO -@INTERAC -question \
+-(futuremakers OR FUTUREMAKERS) -(WiFi OR Wi-Fi OR wifi OR wi-fi) -pride -CP0031 -HockeyCanada -bptn -BPTN -ameritrade -DM - christmas  -box \
+lang:en -is:retweet -has:images -has:videos -has:hashtags'
+
+
+RBC
+query = 'to:RBC -is:verified -(@verizionfios OR @VerizonFios) -@TD -@CIBC -@Scotiabank -@BMO  -CIBC -TD -Scotia -#Someday - #GoCanadaGo\
+-(futuremakers OR FUTUREMAKERS) -Fios -#WorldJuniors -(WiFi OR Wi-Fi OR wifi OR wi-fi) -(BMO Field OR BMO FIELD) -CP0031 -HockeyCanada \
+lang:en -is:retweet -has:images -has:videos'
